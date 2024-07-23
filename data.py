@@ -16,15 +16,24 @@ class Data:
                 classes[int(id)] = (class_name, int(num_students))
         return classes
 
-    def load_instructors(self, instructor_file):
+    # def load_instructors(self, instructor_file):
+    #     instructors = {}
+    #     with open(instructor_file, 'r', encoding='utf-8') as file:
+    #         next(file)  # skip header
+    #         for line in file:
+    #             if line.strip():  # Check if line is not empty
+    #                 id, name = line.strip().split(',')
+    #                 instructors[int(id)] = name
+    #     return instructors
+
+    def load_instructors(self, file_path):
         instructors = {}
-        with open(instructor_file, 'r', encoding='utf-8') as file:
-            next(file)  # skip header
-            for line in file:
-                if line.strip():  # Check if line is not empty
-                    id, name = line.strip().split(',')
-                    instructors[int(id)] = name
+        with open(file_path, 'r', encoding='utf-8') as file:
+            csv_reader = csv.DictReader(file)
+            for row in csv_reader:
+                instructors[row['id']] = row
         return instructors
+
 
     def load_rooms(self, room_file):
         rooms = {}
