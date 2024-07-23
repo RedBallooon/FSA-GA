@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Table</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+</head>
+<body>
+
+    <h2>Schedule Table</h2>
+    
+    <div class="controls">
+        <input type="file" id="csvFileInput" accept=".csv" />
+        <select id="teacherSelect" class="js-example-basic-single">
+            <option value="">Chọn giáo viên</option>
+        </select>
+        <div class="date-controls">
+            <button id="prevWeekBtn"> << Tuần trước</button>
+            <button id="currentWeekBtn">Hiện tại</button>
+            <button id="nextWeekBtn">Tuần sau >> </button>
+            <input type="date" id="datePicker">
+        </div>
+    </div>
+    
+    <table>
+        <thead>
+            <tr>
+                <th class="time-slot">Ca học</th>
+                <th>Thứ 2<br><span id="dateMonday">08/07/2024</span></th>
+                <th>Thứ 3<br><span id="dateTuesday">09/07/2024</span></th>
+                <th>Thứ 4<br><span id="dateWednesday">10/07/2024</span></th>
+                <th>Thứ 5<br><span id="dateThursday">11/07/2024</span></th>
+                <th>Thứ 6<br><span id="dateFriday">12/07/2024</span></th>
+                <th>Thứ 7<br><span id="dateSaturday">13/07/2024</span></th>
+                <th>Chủ nhật<br><span id="dateSunday">14/07/2024</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sáng</td>
+                <td class="cell" data-day="2" data-slot="Sáng"></td>
+                <td class="cell" data-day="3" data-slot="Sáng"></td>
+                <td class="cell" data-day="4" data-slot="Sáng"></td>
+                <td class="cell" data-day="5" data-slot="Sáng"></td>
+                <td class="cell" data-day="6" data-slot="Sáng"></td>
+                <td class="cell" data-day="7" data-slot="Sáng"></td>
+                <td class="cell" data-day="8" data-slot="Sáng"></td>
+            </tr>
+            <tr>
+                <td>Chiều</td>
+                <td class="cell" data-day="2" data-slot="Chiều"></td>
+                <td class="cell" data-day="3" data-slot="Chiều"></td>
+                <td class="cell" data-day="4" data-slot="Chiều"></td>
+                <td class="cell" data-day="5" data-slot="Chiều"></td>
+                <td class="cell" data-day="6" data-slot="Chiều"></td>
+                <td class="cell" data-day="7" data-slot="Chiều"></td>
+                <td class="cell" data-day="8" data-slot="Chiều"></td>
+            </tr>
+            <tr>
+                <td>Tối</td>
+                <td class="cell" data-day="2" data-slot="Tối"></td>
+                <td class="cell" data-day="3" data-slot="Tối"></td>
+                <td class="cell" data-day="4" data-slot="Tối"></td>
+                <td class="cell" data-day="5" data-slot="Tối"></td>
+                <td class="cell" data-day="6" data-slot="Tối"></td>
+                <td class="cell" data-day="7" data-slot="Tối"></td>
+                <td class="cell" data-day="8" data-slot="Tối"></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="legend">
+        <div class="theory">Lịch học lý thuyết</div>
+        <div class="practice">Lịch học thực hành</div>
+        <div class="online">Lịch học trực tuyến</div>
+        <div class="exam">Lịch thi</div>
+        <div class="pause">Lịch tạm ngừng</div>
+    </div>
+    
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+    
+    </body>
+    
+</html>

@@ -1,0 +1,31 @@
+course_id,name,type,department
+1,Thiết Kế Kiến Trúc,TH,CE
+2,Điện Tử Máy Tính,TH,CE
+3,Tự Động Hóa,LT,ME
+4,Khai Phá Dữ Liệu,TH,CE
+5,Xây Dựng Dân Dụng,LT,EE
+6,Mạng Máy Tính,TH,IT
+7,Thiết Kế Mạch,LT,CE
+8,Tối Ưu Hóa,TH,ME
+9,Điều Khiển Tự Động,LT,ME
+10,Phát Triển Ứng Dụng Di Động,LT,EE
+11,Thiết Kế Mạch Số,LT,BA
+12,Hành Vi Tổ Chức,TH,CE
+13,Điện Tử Hàng Không,TH,EE
+14,Điện Lạnh Công Nghiệp,LT,ME
+15,Thiết Kế Chip,LT,ME
+16,Toán Cao Cấp,LT,CE
+17,Kiến Trúc Máy Tính,TH,EE
+18,Phân Tích Mạch,LT,CE
+19,Kỹ Thuật Máy Tính,TH,ME
+20,Quản Trị Nhân Lực,TH,CE
+21,Vật Lý Đại Cương,TH,CE
+22,Điện Lực,TH,ME
+23,Vật Lý Hiện Đại,LT,EE
+24,Kỹ Thuật Số,LT,ME
+25,Điện Lạnh,LT,BA
+26,Phân Tích Dữ Liệu,LT,IT
+27,Thiết Kế Web,TH,EE
+28,Điện Cơ,LT,EE
+29,Quản Lý Chuỗi Cung Ứng,TH,ME
+30,Thiết Kế Điều Hòa,LT,ME

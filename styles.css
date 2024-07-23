@@ -1,0 +1,159 @@
+body {
+    font-family: Tahoma, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    background-image: linear-gradient(0deg, transparent 24%, rgba(0, 0, 0, 0.05) 25%, rgba(0, 0, 0, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 0, 0, 0.05) 75%, rgba(0, 0, 0, 0.05) 76%, transparent 77%),
+                      linear-gradient(90deg, transparent 24%, rgba(0, 0, 0, 0.05) 25%, rgba(0, 0, 0, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 0, 0, 0.05) 75%, rgba(0, 0, 0, 0.05) 76%, transparent 77%);
+    background-size: 20px 20px;
+}
+
+th, td {
+    border: 1px solid #c9d0db;
+    padding: 8px;
+    text-align: center;
+    position: relative;
+    font-size: 13px;
+    line-height: 1.42857143;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    color: #003763;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 0;
+    background-color: #92d6ff;
+    border-color: #1da1f2;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.time-slot {
+    width: 100px;
+}
+.legend {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.legend div {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.legend .theory {
+    background-color: #4CAF50; /* Green for theory */
+}
+
+.legend .practice {
+    background-color: #2196F3; /* Blue for practice */
+}
+
+.legend .online {
+    background-color: #FF9800; /* Orange for online */
+}
+
+.legend .exam {
+    background-color: #F44336; /* Red for exams */
+}
+
+.legend .pause {
+    background-color: #9E9E9E; /* Gray for pauses */
+}
+
+/* Styling for occupied cells */
+.cell.occupied {
+    background-color: #E0F7FA;
+    font-size: 12px;
+}
+
+.cell div {
+    margin-bottom: 5px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .legend div {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+}
+/* CSS for select dropdown */
+.select2-container--default .select2-selection--single {
+    width: 218px; /* Độ rộng của khung chọn giáo viên */
+    height: 36px; /* Chiều cao của khung chọn giáo viên */
+    font-size: 11px; /* Cỡ chữ của khung chọn giáo viên */
+    padding: 6px 20px 6px 10px; /* Padding bên trong của khung chọn giáo viên */
+    border: 1px solid #ccc; /* Viền của khung chọn giáo viên */
+    display: flex; /* Sử dụng flex để căn chỉnh các phần tử bên trong */
+    align-items: center; /* Căn chỉnh các phần tử theo chiều dọc */
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    flex: 1; /* Phần nội dung đã chọn sẽ căn chỉnh linh hoạt với phần tìm kiếm */
+    padding-right: 10px; /* Khoảng cách lề bên trong bên phải của nội dung đã chọn */
+    overflow: hidden; /* Ẩn phần nội dung thừa */
+    text-overflow: ellipsis; /* Hiển thị dấu elip khi nội dung quá dài */
+    white-space: nowrap; /* Ngăn không cho nội dung xuống dòng */
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 100%; /* Chiều cao của mũi tên dropdown */
+    display: flex; /* Sử dụng flex để căn chỉnh mũi tên */
+    align-items: center; /* Căn chỉnh mũi tên theo chiều dọc */
+}
+
+.select2-container--default .select2-dropdown {
+    width: 250px !important; /* Độ rộng của dropdown */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng của dropdown */
+}
+
+.select2-container--default .select2-dropdown--below {
+    width: 218px !important; /* Độ rộng của dropdown khi hiển thị xuống dưới */
+}
+
+.select2-container--default .select2-search__field {
+    width: calc(100% - 30px); /* Độ rộng của ô tìm kiếm, tính cả mũi tên và margin */
+    height: 34px; /* Chiều cao của ô tìm kiếm */
+    font-size: 11px; /* Cỡ chữ của ô tìm kiếm */
+    border: none; /* Bỏ viền của ô tìm kiếm */
+    outline: none; /* Bỏ đường viền khi focus */
+    margin-right: 5px; /* Margin bên phải của ô tìm kiếm */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .select2-container--default .select2-selection--single {
+        width: 100%; /* Độ rộng 100% trên màn hình nhỏ */
+    }
+}
+
+
+

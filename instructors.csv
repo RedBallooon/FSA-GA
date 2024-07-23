@@ -1,16 +1,31 @@
-id,name
-1,Tô Thị Lệ
-2,Nguyễn Thị Tuyên
-3,Nguyễn Gia Trung Quân
-4,Nguyễn Thị Thu Hằng
-5,Đỗ Công Trường
-6,Lôi Hoài Châu
-7,Nguyễn Thị Lộ Phi
-8,Hồ Thị Lôi
-9,Nguyễn Ngân Thúy
-10,Nguyễn Lương Tuấn Dâng
-11,Trần Nguyễn Thị Nhật Vương
-12,TS. Trần Bá Lô Hoàng
-13,ThS. Nguyễn Thị Nhị Dung
-14,ThS. Đinh Thị Thúy Liễu
-
+instructor_id,fullname,degree,department
+1,Bùi Hoàng Anh,ThS,BA
+2,Đỗ Quốc Linh,ThS,CE
+3,Phạm Hoàng Tú,TS,ME
+4,Đỗ Hữu Uyên,ThS,ME
+5,Hoàng Hoàng Bảo,ThS,ME
+6,Lê Đức Hòa,ThS,ME
+7,Đỗ Đức Uyên,ThS,IT
+8,Hoàng Hữu Hòa,ThS,BA
+9,Bùi Quốc Nam,TS,IT
+10,Phạm Hữu Đạt,TS,EE
+11,Đỗ Minh Linh,TS,EE
+12,Trần Thái Minh,ThS,BA
+13,Phan Phúc Nhung,ThS,IT
+14,Hoàng Hoàng Minh,TS,EE
+15,Phạm Minh Uyên,ThS,EE
+16,Vũ Hữu Minh,TS,ME
+17,Nguyễn Phúc Dũng,TS,CE
+18,Phan Quốc Hiếu,TS,EE
+19,Nguyễn Đức Minh,ThS,IT
+20,Phan Hữu Châu,TS,IT
+21,Trần Ngọc Khang,TS,BA
+22,Nguyễn Quốc Minh,TS,BA
+23,Đặng Phúc Nam,TS,IT
+24,Hoàng Đức Khang,TS,ME
+25,Bùi Hữu Khang,ThS,IT
+26,Lê Phúc Uyên,ThS,CE
+27,Bùi Quốc Sơn,ThS,CE
+28,Trần Minh Uyên,ThS,ME
+29,Bùi Đức Uyên,TS,IT
+30,Phạm Ngọc Trang,TS,ME
