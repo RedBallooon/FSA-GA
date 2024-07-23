@@ -18,11 +18,25 @@ class Data:
                 }
         return classes
 
+<<<<<<< HEAD
+=======
+    # def load_instructors(self, instructor_file):
+    #     instructors = {}
+    #     with open(instructor_file, 'r', encoding='utf-8') as file:
+    #         next(file)  # skip header
+    #         for line in file:
+    #             if line.strip():  # Check if line is not empty
+    #                 id, name = line.strip().split(',')
+    #                 instructors[int(id)] = name
+    #     return instructors
+
+>>>>>>> be2736becbcdbf68bfcdfe1d400c668b984577fc
     def load_instructors(self, file_path):
         instructors = {}
         with open(file_path, 'r', encoding='utf-8') as file:
             csv_reader = csv.DictReader(file)
             for row in csv_reader:
+<<<<<<< HEAD
                 instructor_id = int(row['instructor_id'])
                 instructors[instructor_id] = {
                     'fullname': row['fullname'],
@@ -32,6 +46,13 @@ class Data:
         return instructors
 
     def load_rooms(self, file_path):
+=======
+                instructors[row['id']] = row
+        return instructors
+
+
+    def load_rooms(self, room_file):
+>>>>>>> be2736becbcdbf68bfcdfe1d400c668b984577fc
         rooms = {}
         with open(file_path, 'r', encoding='utf-8') as file:
             csv_reader = csv.DictReader(file)
